@@ -46,17 +46,20 @@ a {
 a:hover {
     color: #fff;
     background-color: var(--orange);
-
     border-radius: 5px;
 }
 
 main {
     width: 90vw;
     margin: auto;
+    background: white url('assets/team.jpg') no-repeat right center;
+    background-size: 60%;
+    min-height: 65vh;
 }
 
-h1, p {
-    width: 340px;
+h1,
+p {
+    max-width: 340px;
 }
 
 h1 {
@@ -87,4 +90,45 @@ button {
 button:hover {
     cursor: pointer;
     filter: brightness(1.2);
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    display: none !important;
+}
+.material-symbols-outlined:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 708px) {
+    main {
+        background-position: top center;
+        padding-top: 200px;
+        text-align: center;
+        background-size: 320px;
+    }
+    h1,
+    p {
+        display: block;
+        margin: auto;
+    }
+    h1 {
+        font-size: 2em;
+
+    }
+
+    p {
+        margin: 20px auto;
+        font-size: 1em;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    nav > ul {
+        display: none;
+    }
+    .material-symbols-outlined {
+        display: block !important;
+    }
 }
