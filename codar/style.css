@@ -43,6 +43,10 @@ button {
   font-weight: bold;
   background-color: var(--red);
   color: #fff;
+
+}
+
+button, input {
   border: none;
   padding: 10px 40px;
   border-radius: 8px;
@@ -79,12 +83,22 @@ h1 {
   margin-bottom: 40px;
 }
 
-section#orcamento {
-  margin-top: 60px;
+section {
+  margin-top: 70px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 15vw;
 }
 
-#img1 {
+section#services > ul {
+  list-style-type: '\2714\0020\0020';
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+
 }
