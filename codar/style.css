@@ -64,7 +64,8 @@ button:hover {
 h2 {
   color: var(--red);
   font-style: italic;
-  font-size: 2em;
+
+  font-size: 2.8em;
 }
 
 main {
@@ -72,10 +73,12 @@ main {
   margin: auto;
   padding: 0 20px;
 }
+
+
 h1 
 span {
   color: black;
-  font-size: 0.4em;
+  font-size: 0.32em;
 }
 
 h1 {
@@ -92,9 +95,15 @@ section {
   gap: 15vw;
 }
 
-section#services > ul {
+
+section#services {
   margin-top: 150px;
+}
+
+
+section#services > ul {
   list-style-type: '\2714\0020\0020';
+  list-style-position: inside;
   font-size: 1.2em;
   display: flex;
   flex-direction: column;
@@ -123,7 +132,7 @@ form h3 {
 section#story {
   display: flex;
   gap: 40px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 div.perfil {
@@ -161,7 +170,7 @@ div.about > span + span {
 }
 
 footer {
-  height: 40vh;
+  height: 280px;
   margin-top: 60px;
   background-color: black;
   color: white;
@@ -210,3 +219,53 @@ footer ion-icon {
   font-size: 30px;
 }
 
+
+@media screen and (max-width: 680px){
+  header, section, footer > nav  {
+    flex-direction: column;
+  }
+
+  header h2 {
+    margin-bottom: 20px;
+  }
+
+  header button {
+    display: none;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  form button, form input {
+    width: 70%;
+    margin-left: 0;
+    margin-top: 20px;
+
+  }
+
+  div.about, section ul {
+    text-align: start;
+  }
+
+  section ul {
+    order: 2;
+  }
+
+  footer {
+    height: 450px;
+  }
+
+  footer ul:first-child{
+    align-self: center;
+  }
+  
+  footer ul:first-child h3{ 
+    align-self: center;
+  }
+
+  footer ul {
+    gap: 5px;
+    margin-bottom: 15px;
+  }
+}
